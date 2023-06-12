@@ -244,6 +244,10 @@ ul {
 /* End Sign Up */
 /* Start Contact */
 
+.contact .card {
+  border-bottom: 4px solid var(--teal);
+}
+
 .contact .card-body svg {
   color: var(--teal);
 }
