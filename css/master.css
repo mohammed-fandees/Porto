@@ -1,0 +1,286 @@
+/* Start Global Rules */
+body {
+  font-family: Nunito, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji,
+    Segoe UI Symbol, Noto Color Emoji;
+}
+
+:root {
+  --teal: #64a19d;
+  --pink: #d71f86;
+  --section: #f8f9fa;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+/* End Global Rules */
+/* Start Components */
+
+.smooth {
+  transition: all .1s ease;
+  -webkit-transition: all .1s ease;
+  -moz-transition: all .1s ease;
+  -ms-transition: all .1s ease;
+  -o-transition: all .1s ease;
+}
+
+.main-btn {
+  background: var(--teal);
+  color: #fff;
+}
+
+.main-btn:hover {
+  background: #558985;
+  color: #fff;
+}
+
+.overlay {
+  position: relative;
+}
+
+.overlay::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, #000, #00000050);
+}
+
+.overlay .container {
+  position: relative;
+  z-index: 2;
+}
+
+.link {
+  color: var(--teal);
+  text-decoration: underline;
+}
+
+.link:hover {
+  color: #558985 !important;
+}
+
+/* End Components */
+/* Start Navbar */
+
+.navbar {
+  z-index: 30;
+}
+
+@media (max-width: 991px) {
+  .navbar {
+    background: #fff !important;
+  }
+
+  .navbar .navbar-brand {
+    color: #000 !important;
+  }
+}
+
+.navbar .navbar-toggler {
+  font-size: 80%;
+  padding: 12px;
+  color: var(--teal);
+  border-color: var(--teal);
+}
+
+.navbar .navbar-toggler svg {
+  color: var(--teal);
+}
+
+.navbar .navbar-nav a:hover {
+  color: #ffffffa9 !important;
+}
+
+.navbar .navbar-nav a:focus {
+  color: #fff !important;
+}
+
+@media (max-width: 991px) {
+  .navbar .navbar-nav a {
+    color: #000 !important;
+  }
+
+  .navbar .navbar-nav a:hover,
+  .navbar .navbar-nav a:focus {
+    color: #000 !important;
+  }
+}
+
+.bg-white {
+  background: #fff !important;
+  padding: 1rem !important;
+}
+
+.bg-white .navbar-brand {
+  color: rgba(0, 0, 0, .5) !important;
+}
+
+.bg-white .navbar-nav a {
+  color: rgba(0, 0, 0, .5) !important;
+}
+
+.bg-white .navbar-nav a:hover {
+  color: #000 !important;
+}
+
+/* End Navbar */
+/* Start Landing */
+
+.landing {
+  background: url(../imgs/bg-masthead.jpg);
+  background-size: cover;
+  height: 100vh;
+}
+
+.landing h1 {
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.8rem;
+  background: -webkit-linear-gradient(#fff, #00000065);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media (min-width: 370px) {
+  .landing h1 {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+  }
+}
+
+@media (min-width: 560px) {
+  .landing h1 {
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+}
+
+@media (min-width: 991px) {
+  .landing h1 {
+    font-size: 6.5rem;
+    line-height: 6.5rem;
+  }
+}
+
+.landing h2 {
+  max-width: 480px;
+}
+
+.landing a {
+  font-size: 13px;
+  letter-spacing: 1.5px;
+}
+
+/* End Landing */
+/* Start About */
+
+.about {
+  background: linear-gradient(to top, #333, #000);
+}
+
+.about .text p {
+  margin-bottom: 80px;
+}
+
+/* End About */
+/* Start Projects */
+
+.projects .project .text div::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  width: 8px;
+  height: 150px;
+  background: var(--teal);
+}
+
+@media (max-width: 991px) {
+  .projects .project .text div::before {
+    display: none;
+  }
+}
+
+.projects .container>.row .text .content {
+  padding: 80px;
+}
+
+@media (max-width: 991px) {
+  .projects .container>.row .text .content {
+    padding: 3rem !important;
+  }
+}
+
+/* End Projects */
+/* Start Sign Up */
+
+.signup {
+  background: url(../imgs/bg-signup.jpg);
+  background-size: cover;
+}
+
+.signup svg {
+  font-size: 32px;
+  margin-bottom: 8px;
+  color: #fff;
+}
+
+/* End Sign Up */
+/* Start Contact */
+
+.contact .card-body svg {
+  color: var(--teal);
+}
+
+.contact .card-body h4 {
+  font-size: 13px;
+}
+
+.contact .card-body hr {
+  border-width: 4px;
+  width: 50px;
+  border-color: var(--teal);
+  opacity: 1;
+}
+
+.social-icons {
+  margin-top: 80px;
+}
+
+.social-icons li a {
+  width: 48px;
+  height: 48px;
+  background: #1a1a1a;
+}
+
+.social-icons li a svg {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.social-icons li a:hover svg {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* End Contact */
+
+footer {
+  padding: 80px 0;
+  letter-spacing: 2px;
+  font-size: 14px;
+}
